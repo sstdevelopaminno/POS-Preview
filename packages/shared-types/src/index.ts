@@ -200,11 +200,21 @@ export interface AuditLog {
   id: UUID;
   tenant_id: UUID | null;
   branch_id: UUID | null;
+  user_id: UUID;
+  role: PlatformRole | BranchRole;
   actor_user_id: UUID;
   actor_role: PlatformRole | BranchRole;
   action: string;
+  module: string;
+  entity_type: string;
+  entity_id: string | null;
   target_table: string;
   target_id: UUID | null;
+  before_data: Record<string, unknown>;
+  after_data: Record<string, unknown>;
+  override_by_user_id: UUID | null;
+  ip_address: string | null;
+  user_agent: string | null;
   metadata: Record<string, unknown>;
   created_at: string;
 }

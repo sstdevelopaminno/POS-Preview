@@ -36,8 +36,9 @@ export function LanguageSwitcher({ currentLanguage, label, thaiLabel, englishLab
         style={{
           borderRadius: 10,
           border: "1px solid var(--border)",
-          padding: "8px 10px",
-          background: "#fff"
+          padding: "10px 12px",
+          background: "#fff",
+          minHeight: 44
         }}
       >
         {options.map((option) => (

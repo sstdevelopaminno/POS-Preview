@@ -19,7 +19,20 @@ export default async function PosPreviewPage() {
       </div>
       <p>{t(lang, "pos_preview_desc")}</p>
       <p>
-        <Link href="/preview/pos/settings">{t(lang, "common_settings")}</Link>
+        <Link
+          href="/preview/pos/settings"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            minHeight: 44,
+            padding: "10px 14px",
+            borderRadius: 10,
+            border: "1px solid var(--border)",
+            background: "#fff"
+          }}
+        >
+          {t(lang, "common_settings")}
+        </Link>
       </p>
       <PosPreviewBoard lang={lang} />
     </main>

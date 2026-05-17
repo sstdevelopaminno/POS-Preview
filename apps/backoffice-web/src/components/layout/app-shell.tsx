@@ -44,9 +44,12 @@ export function AppShell({
               href={item.href}
               style={{
                 border: "1px solid var(--border)",
-                padding: "8px 12px",
+                padding: "10px 14px",
                 borderRadius: 999,
-                background: "#fff"
+                background: "#fff",
+                minHeight: 44,
+                display: "inline-flex",
+                alignItems: "center"
               }}
             >
               {item.label}

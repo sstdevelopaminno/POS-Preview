@@ -49,9 +49,48 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.tap-target {
+  min-height: 44px;
+}
+
+.pos-preview-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  min-height: 520px;
+}
+
+.pos-preview-stack {
+  display: grid;
+  gap: 8px;
+}
+
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(21, 17, 14, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 30;
+}
+
+.dialog-card {
+  width: min(420px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 14px;
+}
+
 @media (max-width: 960px) {
   .grid.cols-4,
   .grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .pos-preview-layout {
     grid-template-columns: 1fr;
   }
 }

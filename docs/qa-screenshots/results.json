@@ -1,0 +1,1402 @@
+[
+  {
+    "viewport": "mobile",
+    "screen": "backoffice-preview-pos",
+    "url": "https://pos-preview-phi.vercel.app/preview/pos",
+    "screenshot": "docs/qa-screenshots/mobile/backoffice-preview-pos.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 25,
+        "smallCount": 17,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 35,
+            "height": 21
+          },
+          {
+            "tag": "button",
+            "text": "เส้น",
+            "width": 52,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "ทานเล่น",
+            "width": 78,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "คอมโบ",
+            "width": 72,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "หน้าร้าน",
+            "width": 70,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "กลับบ้าน",
+            "width": 74,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "Grab",
+            "width": 56,
+            "height": 33
+          },
+          {
+            "tag": "button",
+            "text": "LINE MAN",
+            "width": 89,
+            "height": 33
+          },
+          {
+            "tag": "button",
+            "text": "Shopee",
+            "width": 72,
+            "height": 33
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": {
+        "found": false,
+        "horizontallyVisible": false,
+        "width": 0
+      },
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "mobile",
+    "screen": "backoffice-dashboard",
+    "url": "https://pos-preview-phi.vercel.app/dashboard",
+    "screenshot": "docs/qa-screenshots/mobile/backoffice-dashboard.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 11,
+        "smallCount": 11,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "บิลขาย",
+            "width": 73,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สต๊อก",
+            "width": 65,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "พนักงาน",
+            "width": 82,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานยอดขาย",
+            "width": 131,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานสต๊อก",
+            "width": 114,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงาน Audit",
+            "width": 118,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ช่องทางเดลิเวอรี",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "กะการขาย",
+            "width": 94,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "mobile",
+    "screen": "backoffice-it-admin",
+    "url": "https://pos-preview-phi.vercel.app/it-admin",
+    "screenshot": "docs/qa-screenshots/mobile/backoffice-it-admin.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 7,
+        "smallCount": 7,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ร้านค้า",
+            "width": 68,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "แพ็กเกจ",
+            "width": 80,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ผู้ใช้ระบบกลาง",
+            "width": 122,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สถานะฐานข้อมูล",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 61,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "mobile",
+    "screen": "qr-home",
+    "url": "https://qr-pos-preview.vercel.app/",
+    "screenshot": "docs/qa-screenshots/mobile/qr-home.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 1,
+        "smallCount": 1,
+        "samples": [
+          {
+            "tag": "a",
+            "text": "Open Scanner Preview",
+            "width": 158,
+            "height": 21
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "mobile",
+    "screen": "qr-scan",
+    "url": "https://qr-pos-preview.vercel.app/scan",
+    "screenshot": "docs/qa-screenshots/mobile/qr-scan.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 3,
+        "smallCount": 3,
+        "samples": [
+          {
+            "tag": "input",
+            "text": "",
+            "width": 372,
+            "height": 39
+          },
+          {
+            "tag": "input",
+            "text": "",
+            "width": 372,
+            "height": 39
+          },
+          {
+            "tag": "button",
+            "text": "Verify Login",
+            "width": 102,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "screen": "backoffice-preview-pos",
+    "url": "https://pos-preview-phi.vercel.app/preview/pos",
+    "screenshot": "docs/qa-screenshots/tablet-portrait/backoffice-preview-pos.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 25,
+        "smallCount": 20,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 35,
+            "height": 21
+          },
+          {
+            "tag": "button",
+            "text": "เส้น",
+            "width": 52,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "ทานเล่น",
+            "width": 78,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "เครื่องดื่ม",
+            "width": 85,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "คอมโบ",
+            "width": 72,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "หน้าร้าน",
+            "width": 70,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "กลับบ้าน",
+            "width": 74,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "Grab",
+            "width": 56,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "LINE MAN",
+            "width": 89,
+            "height": 33
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": {
+        "found": false,
+        "horizontallyVisible": false,
+        "width": 0
+      },
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "screen": "backoffice-dashboard",
+    "url": "https://pos-preview-phi.vercel.app/dashboard",
+    "screenshot": "docs/qa-screenshots/tablet-portrait/backoffice-dashboard.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 11,
+        "smallCount": 11,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "บิลขาย",
+            "width": 73,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สต๊อก",
+            "width": 65,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "พนักงาน",
+            "width": 82,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานยอดขาย",
+            "width": 131,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานสต๊อก",
+            "width": 114,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงาน Audit",
+            "width": 118,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ช่องทางเดลิเวอรี",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "กะการขาย",
+            "width": 94,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "screen": "backoffice-it-admin",
+    "url": "https://pos-preview-phi.vercel.app/it-admin",
+    "screenshot": "docs/qa-screenshots/tablet-portrait/backoffice-it-admin.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 7,
+        "smallCount": 7,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ร้านค้า",
+            "width": 68,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "แพ็กเกจ",
+            "width": 80,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ผู้ใช้ระบบกลาง",
+            "width": 122,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สถานะฐานข้อมูล",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 61,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "screen": "qr-home",
+    "url": "https://qr-pos-preview.vercel.app/",
+    "screenshot": "docs/qa-screenshots/tablet-portrait/qr-home.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 1,
+        "smallCount": 1,
+        "samples": [
+          {
+            "tag": "a",
+            "text": "Open Scanner Preview",
+            "width": 158,
+            "height": 21
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "screen": "qr-scan",
+    "url": "https://qr-pos-preview.vercel.app/scan",
+    "screenshot": "docs/qa-screenshots/tablet-portrait/qr-scan.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 3,
+        "smallCount": 3,
+        "samples": [
+          {
+            "tag": "input",
+            "text": "",
+            "width": 750,
+            "height": 39
+          },
+          {
+            "tag": "input",
+            "text": "",
+            "width": 750,
+            "height": 39
+          },
+          {
+            "tag": "button",
+            "text": "Verify Login",
+            "width": 102,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "screen": "backoffice-preview-pos",
+    "url": "https://pos-preview-phi.vercel.app/preview/pos",
+    "screenshot": "docs/qa-screenshots/tablet-landscape/backoffice-preview-pos.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 25,
+        "smallCount": 20,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 35,
+            "height": 21
+          },
+          {
+            "tag": "button",
+            "text": "เส้น",
+            "width": 52,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "ทานเล่น",
+            "width": 78,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "เครื่องดื่ม",
+            "width": 85,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "คอมโบ",
+            "width": 72,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "หน้าร้าน",
+            "width": 70,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "กลับบ้าน",
+            "width": 74,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "Grab",
+            "width": 56,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "LINE MAN",
+            "width": 89,
+            "height": 34
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": {
+        "found": false,
+        "horizontallyVisible": false,
+        "width": 0
+      },
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "screen": "backoffice-dashboard",
+    "url": "https://pos-preview-phi.vercel.app/dashboard",
+    "screenshot": "docs/qa-screenshots/tablet-landscape/backoffice-dashboard.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 11,
+        "smallCount": 11,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "บิลขาย",
+            "width": 73,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สต๊อก",
+            "width": 65,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "พนักงาน",
+            "width": 82,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานยอดขาย",
+            "width": 131,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานสต๊อก",
+            "width": 114,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงาน Audit",
+            "width": 118,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ช่องทางเดลิเวอรี",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "กะการขาย",
+            "width": 94,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "screen": "backoffice-it-admin",
+    "url": "https://pos-preview-phi.vercel.app/it-admin",
+    "screenshot": "docs/qa-screenshots/tablet-landscape/backoffice-it-admin.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 7,
+        "smallCount": 7,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ร้านค้า",
+            "width": 68,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "แพ็กเกจ",
+            "width": 80,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ผู้ใช้ระบบกลาง",
+            "width": 122,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สถานะฐานข้อมูล",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 61,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "screen": "qr-home",
+    "url": "https://qr-pos-preview.vercel.app/",
+    "screenshot": "docs/qa-screenshots/tablet-landscape/qr-home.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 1,
+        "smallCount": 1,
+        "samples": [
+          {
+            "tag": "a",
+            "text": "Open Scanner Preview",
+            "width": 158,
+            "height": 21
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "screen": "qr-scan",
+    "url": "https://qr-pos-preview.vercel.app/scan",
+    "screenshot": "docs/qa-screenshots/tablet-landscape/qr-scan.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 3,
+        "smallCount": 3,
+        "samples": [
+          {
+            "tag": "input",
+            "text": "",
+            "width": 784,
+            "height": 39
+          },
+          {
+            "tag": "input",
+            "text": "",
+            "width": 784,
+            "height": 39
+          },
+          {
+            "tag": "button",
+            "text": "Verify Login",
+            "width": 102,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "desktop",
+    "screen": "backoffice-preview-pos",
+    "url": "https://pos-preview-phi.vercel.app/preview/pos",
+    "screenshot": "docs/qa-screenshots/desktop/backoffice-preview-pos.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 25,
+        "smallCount": 20,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 35,
+            "height": 21
+          },
+          {
+            "tag": "button",
+            "text": "เส้น",
+            "width": 52,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "ทานเล่น",
+            "width": 78,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "เครื่องดื่ม",
+            "width": 85,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "คอมโบ",
+            "width": 72,
+            "height": 38
+          },
+          {
+            "tag": "button",
+            "text": "หน้าร้าน",
+            "width": 70,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "กลับบ้าน",
+            "width": 74,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "Grab",
+            "width": 56,
+            "height": 34
+          },
+          {
+            "tag": "button",
+            "text": "LINE MAN",
+            "width": 89,
+            "height": 34
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": {
+        "found": false,
+        "horizontallyVisible": false,
+        "width": 0
+      },
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "desktop",
+    "screen": "backoffice-dashboard",
+    "url": "https://pos-preview-phi.vercel.app/dashboard",
+    "screenshot": "docs/qa-screenshots/desktop/backoffice-dashboard.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 11,
+        "smallCount": 11,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "บิลขาย",
+            "width": 73,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สต๊อก",
+            "width": 65,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "พนักงาน",
+            "width": 82,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานยอดขาย",
+            "width": 131,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงานสต๊อก",
+            "width": 114,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "รายงาน Audit",
+            "width": 118,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ช่องทางเดลิเวอรี",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "กะการขาย",
+            "width": 94,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "desktop",
+    "screen": "backoffice-it-admin",
+    "url": "https://pos-preview-phi.vercel.app/it-admin",
+    "screenshot": "docs/qa-screenshots/desktop/backoffice-it-admin.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 7,
+        "smallCount": 7,
+        "samples": [
+          {
+            "tag": "select",
+            "text": "ไทยอังกฤษ",
+            "width": 82,
+            "height": 35
+          },
+          {
+            "tag": "a",
+            "text": "แดชบอร์ด",
+            "width": 92,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ร้านค้า",
+            "width": 68,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "แพ็กเกจ",
+            "width": 80,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ผู้ใช้ระบบกลาง",
+            "width": 122,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "สถานะฐานข้อมูล",
+            "width": 135,
+            "height": 39
+          },
+          {
+            "tag": "a",
+            "text": "ตั้งค่า",
+            "width": 61,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "desktop",
+    "screen": "qr-home",
+    "url": "https://qr-pos-preview.vercel.app/",
+    "screenshot": "docs/qa-screenshots/desktop/qr-home.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 1,
+        "smallCount": 1,
+        "samples": [
+          {
+            "tag": "a",
+            "text": "Open Scanner Preview",
+            "width": 158,
+            "height": 21
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  },
+  {
+    "viewport": "desktop",
+    "screen": "qr-scan",
+    "url": "https://qr-pos-preview.vercel.app/scan",
+    "screenshot": "docs/qa-screenshots/desktop/qr-scan.png",
+    "metrics": {
+      "hasOverflow": false,
+      "overflowPx": 0,
+      "touchTargets": {
+        "total": 3,
+        "smallCount": 3,
+        "samples": [
+          {
+            "tag": "input",
+            "text": "",
+            "width": 784,
+            "height": 39
+          },
+          {
+            "tag": "input",
+            "text": "",
+            "width": 784,
+            "height": 39
+          },
+          {
+            "tag": "button",
+            "text": "Verify Login",
+            "width": 102,
+            "height": 39
+          }
+        ]
+      },
+      "modals": {
+        "visibleCount": 0,
+        "issues": []
+      },
+      "keyboardLayout": {
+        "beforeOverflowPx": 0,
+        "afterOverflowPx": 0,
+        "brokenByFocus": false
+      },
+      "tables": {
+        "count": 0,
+        "scrollIssues": 0
+      },
+      "cartSidebar": null,
+      "pinModalPresent": false,
+      "pinModalFitsViewport": false
+    }
+  }
+]

@@ -119,6 +119,7 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
   const [activeCategory, setActiveCategory] = useState(0);
   const [orderRows, setOrderRows] = useState<OrderRow[]>(initialOrderRows);
   const [currentPage, setCurrentPage] = useState(1);
+  const [cartCurrentPage, setCartCurrentPage] = useState(1);
   const [columnsPerRow, setColumnsPerRow] = useState(4);
 
   const selectedCategory = categories[lang][activeCategory]?.key ?? "all";
@@ -153,6 +154,15 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
     return visibleProducts.slice(start, start + itemsPerPage);
   }, [itemsPerPage, safeCurrentPage, visibleProducts]);
 
+  const cartItemsPerPage = 5;
+  const cartTotalPages = Math.max(1, Math.ceil(orderRows.length / cartItemsPerPage));
+  const safeCartCurrentPage = Math.min(cartCurrentPage, cartTotalPages);
+  const shouldShowCartPagination = cartTotalPages > 1;
+  const pagedOrderRows = useMemo(() => {
+    const start = (safeCartCurrentPage - 1) * cartItemsPerPage;
+    return orderRows.slice(start, start + cartItemsPerPage);
+  }, [orderRows, safeCartCurrentPage]);
+
   const subtotal = useMemo(
     () =>
       orderRows.reduce((sum, row) => {
@@ -184,6 +194,21 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
 
   const removeRow = (id: string) => {
     setOrderRows((currentRows) => currentRows.filter((row) => row.id !== id));
+  };
+
+  const addProductToOrder = (id: string) => {
+    setOrderRows((currentRows) => {
+      const existingRow = currentRows.find((row) => row.id === id);
+      if (existingRow) {
+        return currentRows.map((row) => (row.id === id ? { ...row, qty: row.qty + 1 } : row));
+      }
+      return [...currentRows, { id, qty: 1 }];
+    });
+  };
+
+  const clearOrder = () => {
+    setOrderRows([]);
+    setCartCurrentPage(1);
   };
 
   return (
@@ -227,6 +252,7 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
                 <button
                   key={product.id}
                   type="button"
+                  onClick={() => addProductToOrder(product.id)}
                   className="pos-product-card overflow-hidden rounded-lg border border-slate-300 bg-white text-left"
                 >
                   <div className="relative h-[102px] w-full md:h-[108px]">
@@ -293,14 +319,14 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
           <h3 className="text-[20px] font-extrabold leading-tight text-slate-900 md:text-[21px]">
             {lang === "th" ? `รายการสินค้า (${orderRows.length})` : `Order Items (${orderRows.length})`}
           </h3>
-          <button type="button" className="text-[13px] font-bold leading-none text-red-500">
+          <button type="button" onClick={clearOrder} className="text-[13px] font-bold leading-none text-red-500">
             {lang === "th" ? "ล้างรายการ" : "Clear"}
           </button>
         </div>
 
         <div className="min-h-0 flex-1 overflow-y-auto p-2">
           <div className="space-y-2.5">
-            {orderRows.map((row) => {
+            {pagedOrderRows.map((row) => {
               const product = products.find((item) => item.id === row.id);
               if (!product) return null;
 
@@ -356,6 +382,43 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
               );
             })}
           </div>
+
+          {shouldShowCartPagination ? (
+            <div className="mt-2 flex items-center justify-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => setCartCurrentPage((page) => Math.max(1, page - 1))}
+                disabled={safeCartCurrentPage === 1}
+                className="grid h-7 w-7 place-items-center rounded-md border border-slate-300 bg-white text-[12px] font-bold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label={lang === "th" ? "หน้ารายการก่อนหน้า" : "Previous cart page"}
+              >
+                ‹
+              </button>
+              {Array.from({ length: cartTotalPages }, (_, index) => index + 1).map((page) => (
+                <button
+                  key={page}
+                  type="button"
+                  onClick={() => setCartCurrentPage(page)}
+                  className={`grid h-7 w-7 place-items-center rounded-md border text-[12px] font-bold ${
+                    page === safeCartCurrentPage
+                      ? "border-orange-500 bg-orange-500 text-white"
+                      : "border-slate-300 bg-white text-slate-700"
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setCartCurrentPage((page) => Math.min(cartTotalPages, page + 1))}
+                disabled={safeCartCurrentPage === cartTotalPages}
+                className="grid h-7 w-7 place-items-center rounded-md border border-slate-300 bg-white text-[12px] font-bold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label={lang === "th" ? "หน้ารายการถัดไป" : "Next cart page"}
+              >
+                ›
+              </button>
+            </div>
+          ) : null}
         </div>
 
         <div className="shrink-0 border-t border-slate-300 bg-slate-50 px-2 pb-2 pt-2">

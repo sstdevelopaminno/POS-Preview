@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Language = "th" | "en";
 
@@ -118,12 +118,40 @@ function currency(value: number) {
 export function PosPreviewBoard({ lang }: { lang: Language }) {
   const [activeCategory, setActiveCategory] = useState(0);
   const [orderRows, setOrderRows] = useState<OrderRow[]>(initialOrderRows);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [columnsPerRow, setColumnsPerRow] = useState(4);
 
   const selectedCategory = categories[lang][activeCategory]?.key ?? "all";
   const visibleProducts = useMemo(() => {
     if (selectedCategory === "all") return products;
     return products.filter((product) => product.category === selectedCategory || selectedCategory === "promo");
   }, [selectedCategory]);
+
+  useEffect(() => {
+    const resolveColumns = () => {
+      if (window.innerWidth >= 1280) return 4;
+      if (window.innerWidth >= 768) return 3;
+      return 2;
+    };
+
+    const syncColumns = () => {
+      setColumnsPerRow(resolveColumns());
+    };
+
+    syncColumns();
+    window.addEventListener("resize", syncColumns);
+    return () => window.removeEventListener("resize", syncColumns);
+  }, []);
+
+  const itemsPerPage = columnsPerRow * 3;
+  const totalPages = Math.max(1, Math.ceil(visibleProducts.length / itemsPerPage));
+  const shouldShowPagination = totalPages > 1;
+  const safeCurrentPage = Math.min(currentPage, totalPages);
+
+  const pagedProducts = useMemo(() => {
+    const start = (safeCurrentPage - 1) * itemsPerPage;
+    return visibleProducts.slice(start, start + itemsPerPage);
+  }, [itemsPerPage, safeCurrentPage, visibleProducts]);
 
   const subtotal = useMemo(
     () =>
@@ -171,7 +199,10 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
                 <button
                   key={category.label}
                   type="button"
-                  onClick={() => setActiveCategory(index)}
+                  onClick={() => {
+                    setActiveCategory(index);
+                    setCurrentPage(1);
+                  }}
                   className={`whitespace-nowrap rounded-lg border px-3 py-1.5 text-[12px] font-bold leading-none md:px-3.5 md:py-2 ${
                     isActive
                       ? "border-orange-500 bg-gradient-to-b from-orange-400 to-orange-500 text-white"
@@ -192,7 +223,7 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
 
           <div className="min-h-0 flex-1 overflow-y-auto">
             <div className="pos-products-grid grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-2.5 xl:grid-cols-4">
-              {visibleProducts.map((product) => (
+              {pagedProducts.map((product) => (
                 <button
                   key={product.id}
                   type="button"
@@ -218,21 +249,42 @@ export function PosPreviewBoard({ lang }: { lang: Language }) {
             </div>
           </div>
 
-          <div className="pos-pagination-row mt-2 flex justify-center gap-1.5">
-            {["‹", "1", "2", "3", "›"].map((page) => (
+          {shouldShowPagination ? (
+            <div className="pos-pagination-row mt-2 flex justify-center gap-1.5">
               <button
-                key={page}
                 type="button"
-                className={`grid h-7 w-7 place-items-center rounded-md border text-[12px] font-bold ${
-                  page === "1"
-                    ? "border-orange-500 bg-orange-500 text-white"
-                    : "border-slate-300 bg-white text-slate-700"
-                }`}
+                onClick={() => setCurrentPage((page) => Math.max(1, page - 1))}
+                disabled={safeCurrentPage === 1}
+                className="grid h-7 w-7 place-items-center rounded-md border border-slate-300 bg-white text-[12px] font-bold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label={lang === "th" ? "หน้าก่อนหน้า" : "Previous page"}
               >
-                {page}
+                ‹
               </button>
-            ))}
-          </div>
+              {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+                <button
+                  key={page}
+                  type="button"
+                  onClick={() => setCurrentPage(page)}
+                  className={`grid h-7 w-7 place-items-center rounded-md border text-[12px] font-bold ${
+                    page === safeCurrentPage
+                      ? "border-orange-500 bg-orange-500 text-white"
+                      : "border-slate-300 bg-white text-slate-700"
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setCurrentPage((page) => Math.min(totalPages, page + 1))}
+                disabled={safeCurrentPage === totalPages}
+                className="grid h-7 w-7 place-items-center rounded-md border border-slate-300 bg-white text-[12px] font-bold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label={lang === "th" ? "หน้าถัดไป" : "Next page"}
+              >
+                ›
+              </button>
+            </div>
+          ) : null}
         </div>
       </section>
 

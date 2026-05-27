@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-27T15:11:21.885Z",
+  "generatedAt": "2026-05-27T15:44:58.514Z",
   "config": {
     "loginBaseUrl": "https://sstipos-ten.vercel.app/login/store",
-    "posPreviewUrl": "https://sstipos-ten.vercel.app/pos/orders",
+    "posPreviewUrl": "https://sstipos-ten.vercel.app/preview/pos",
     "storeCode": "NDL-TH-001",
     "employeeCode": "EMP-000101",
     "preferredBranch": "",
@@ -15,101 +15,95 @@
       "result": "passed",
       "steps": [
         {
-          "at": "2026-05-27T15:11:22.708Z",
+          "at": "2026-05-27T15:45:03.968Z",
           "name": "open_login_store",
           "ok": true,
           "url": "https://sstipos-ten.vercel.app/login/store"
         },
         {
-          "at": "2026-05-27T15:11:23.459Z",
+          "at": "2026-05-27T15:45:05.372Z",
           "name": "screenshot",
           "ok": true,
           "file": "01-login-store.png"
         },
         {
-          "at": "2026-05-27T15:11:27.229Z",
+          "at": "2026-05-27T15:45:10.797Z",
           "name": "api_store_verify",
           "ok": true,
           "status": 200
         },
         {
-          "at": "2026-05-27T15:11:27.229Z",
+          "at": "2026-05-27T15:45:10.798Z",
           "name": "submit_store_code",
           "ok": true,
           "storeCode": "NDL-TH-001"
         },
         {
-          "at": "2026-05-27T15:11:27.944Z",
+          "at": "2026-05-27T15:45:12.200Z",
           "name": "branch_step_detected",
           "ok": true
         },
         {
-          "at": "2026-05-27T15:11:31.159Z",
+          "at": "2026-05-27T15:45:17.002Z",
           "name": "confirm_branch_selection",
           "ok": true
         },
         {
-          "at": "2026-05-27T15:11:31.568Z",
+          "at": "2026-05-27T15:45:17.434Z",
           "name": "screenshot",
           "ok": true,
           "file": "02-login-branches.png"
         },
         {
-          "at": "2026-05-27T15:11:35.033Z",
+          "at": "2026-05-27T15:45:21.449Z",
           "name": "api_employee_verify",
           "ok": true,
           "status": 200
         },
         {
-          "at": "2026-05-27T15:11:35.338Z",
+          "at": "2026-05-27T15:45:22.894Z",
           "name": "employee_verified",
           "ok": true,
           "employeeCode": "EMP-000101"
         },
         {
-          "at": "2026-05-27T15:11:35.729Z",
+          "at": "2026-05-27T15:45:23.222Z",
           "name": "screenshot",
           "ok": true,
           "file": "03-login-employee.png"
         },
         {
-          "at": "2026-05-27T15:11:40.770Z",
+          "at": "2026-05-27T15:45:30.579Z",
           "name": "redirect_to_pos_preview",
           "ok": true,
-          "url": "https://sstipos-ten.vercel.app/pos/orders"
+          "url": "https://sstipos-ten.vercel.app/preview/pos"
         },
         {
-          "at": "2026-05-27T15:11:41.739Z",
+          "at": "2026-05-27T15:45:32.030Z",
           "name": "screenshot",
           "ok": true,
           "file": "04-pos-preview-gate.png"
         },
         {
-          "at": "2026-05-27T15:11:44.054Z",
+          "at": "2026-05-27T15:45:34.959Z",
           "name": "api_session_current",
           "ok": true,
           "status": 200
         },
         {
-          "at": "2026-05-27T15:11:45.280Z",
+          "at": "2026-05-27T15:45:37.249Z",
           "name": "api_shift_current_initial",
           "ok": true,
           "status": 200
         },
         {
-          "at": "2026-05-27T15:11:47.298Z",
+          "at": "2026-05-27T15:45:39.282Z",
           "name": "screenshot",
           "ok": true,
           "file": "05-pos-sales-ready.png"
         },
         {
-          "at": "2026-05-27T15:11:50.574Z",
-          "name": "api_shift_open_on_products_guard",
-          "ok": true,
-          "status": 201
-        },
-        {
-          "at": "2026-05-27T15:11:53.402Z",
+          "at": "2026-05-27T15:45:42.405Z",
           "name": "api_products",
           "ok": true,
           "status": 200,
@@ -123,38 +117,38 @@
       "result": "passed",
       "steps": [
         {
-          "at": "2026-05-27T15:11:53.412Z",
+          "at": "2026-05-27T15:45:42.410Z",
           "name": "clear_cookies",
           "ok": true
         },
         {
-          "at": "2026-05-27T15:11:54.801Z",
+          "at": "2026-05-27T15:45:43.759Z",
           "name": "open_pos_after_cookie_clear",
           "ok": true,
-          "url": "https://sstipos-ten.vercel.app/pos/orders"
+          "url": "https://sstipos-ten.vercel.app/preview/pos"
         },
         {
-          "at": "2026-05-27T15:11:55.144Z",
+          "at": "2026-05-27T15:45:44.142Z",
           "name": "api_session_current_after_expire",
           "ok": true,
           "status": 401,
           "code": "missing_pos_session"
         },
         {
-          "at": "2026-05-27T15:11:55.546Z",
+          "at": "2026-05-27T15:45:44.454Z",
           "name": "api_products_after_expire",
           "ok": true,
           "status": 401,
           "code": "missing_pos_session"
         },
         {
-          "at": "2026-05-27T15:11:55.574Z",
+          "at": "2026-05-27T15:45:44.494Z",
           "name": "ui_gate_blocks_access",
           "ok": true,
           "productsVisibleCount": 0
         },
         {
-          "at": "2026-05-27T15:11:55.804Z",
+          "at": "2026-05-27T15:45:44.676Z",
           "name": "screenshot",
           "ok": true,
           "file": "06-session-expired-gate.png"
